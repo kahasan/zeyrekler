@@ -1,0 +1,13 @@
+.Detailsline {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px gray solid;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Detailsline:last-child {
+  border-bottom: 2px gray solid;
+}

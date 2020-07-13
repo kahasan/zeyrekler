@@ -1,0 +1,47 @@
+@import 'normalize.css';
+@import 'formalize.css';
+@import 'variables.css';
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  @media (--t) {
+    font-size: 21px;
+  }
+}
+
+body {
+  font-size: 1rem;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: var(--c-primary);
+  color: var(--c-secondary);
+}
+
+a {
+  color: var(--c-secondary);
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.Title {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.Head {
+  display: flex;
+}
+
+.Home {
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}

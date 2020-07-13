@@ -1,0 +1,25 @@
+{
+  "name": "zeyrekler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "postcss-custom-media": "^7.0.8",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.2",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^1.2.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Hasan KAHRAMAN",
+  "license": "ISC"
+}
