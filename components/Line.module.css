@@ -9,17 +9,30 @@
 }
 
 .Marka {
-  min-width: 145px;
+  @media (--m) {
+    min-width: 145px;
+  }
+  @media (--s) {
+    min-width: 130px;
+  }
 }
 
 .Model {
-  min-width: 45px;
+  text-align: center;
+  @media (--m) {
+    min-width: 45px;
+  }
+  @media (--s) {
+    min-width: 65px;
+  }
 }
 .Yil {
   min-width: 45px;
+  text-align: center;
 }
 .Ceker {
   min-width: 41px;
+  text-align: right;
 }
 
 .Img {

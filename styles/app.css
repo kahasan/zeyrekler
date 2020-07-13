@@ -5,8 +5,12 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  @media (--t) {
-    font-size: 21px;
+
+  @media (--m) {
+    font-size: 18px;
+  }
+  @media (--s) {
+    font-size: 16px;
   }
 }
 

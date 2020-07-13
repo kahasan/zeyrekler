@@ -24,7 +24,11 @@ function Details({ tractor }) {
           Value={tractor.posts.Fiyat}
         />
         <Detailsline Text="Kredi Miktarı" Value={tractor.posts.Kredi_Miktari} />
-        <Detailsline Text="Açıklama" Value={tractor.posts.Aciklama} />
+        <Detailsline
+          className={styles.Aciklama}
+          Text="Açıklama"
+          Value={tractor.posts.Aciklama}
+        />
       </div>
     </div>
   );
