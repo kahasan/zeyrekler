@@ -14,7 +14,7 @@ function Line({ ...props }) {
   var check = false;
   if (currentYear < muayeneYear) {
     check = true;
-  } else if (props.Muayene == "Cekme") {
+  } else if (props.Muayene == "Cekme" || props.Muayene == "Çekme" ) {
     check = true;
   } else if (currentYear == muayeneYear) {
     if (currentMonth < muayeneMonth) {
