@@ -1,2 +1,6 @@
 .Value {
 }
+
+.Numb {
+  display: flex;
+}

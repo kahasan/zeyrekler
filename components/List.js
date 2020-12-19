@@ -5,11 +5,13 @@ import Line from './Line.js';
 import styles from './List.module.css';
 
 function List({ tractors }) {
+  var sayi = 1;
   return (
     <div className={styles.List}>
       {tractors.posts
         .sort((a, b) => a.Marka.localeCompare(b.Marka))
         .map((tractor) => (
+          
           <Line
             key={tractor._id}
             id={tractor._id}
@@ -17,6 +19,7 @@ function List({ tractors }) {
             Model={tractor.Model}
             Yil={tractor.Yil}
             Ceker={tractor.Ceker}
+            Numb={`${sayi++}-`}
           />
         ))}
     </div>
