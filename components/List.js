@@ -11,7 +11,6 @@ function List({ tractors }) {
       {tractors.posts
         .sort((a, b) => a.Marka.localeCompare(b.Marka))
         .map((tractor) => (
-          
           <Line
             key={tractor._id}
             id={tractor._id}
@@ -19,8 +18,11 @@ function List({ tractors }) {
             Model={tractor.Model}
             Yil={tractor.Yil}
             Ceker={tractor.Ceker}
+            Muayene={tractor.Muayene_Tarihi}
             Numb={`${sayi++}-`}
-          />
+          >
+
+          </Line>
         ))}
     </div>
   );
