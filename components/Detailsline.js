@@ -8,7 +8,11 @@ function Detailsline({ className, ...props }) {
   return (
     <div className={styles.Detailsline}>
       <div>{props.Text}</div>
-      <Value className={className} Value={props.Value} />
+      {props.Value ? (
+        <Value className={className} Value={props.Value} />
+      ) : (
+        'Belirtilmedi'
+      )}
     </div>
   );
 }

@@ -12,6 +12,7 @@ function Details({ tractor }) {
         <Detailsline Text="Model" Value={tractor.posts.Model} />
         <Detailsline Text="Yıl" Value={tractor.posts.Yil} />
         <Detailsline Text="Ceker" Value={tractor.posts.Ceker} />
+        <Detailsline Text="Ruhsat" Value={tractor.posts.Ruhsat} />
         <Detailsline Text="Plaka" Value={tractor.posts.Plaka} />
         <Detailsline Text="Saat" Value={tractor.posts.Saat} />
         <Detailsline
