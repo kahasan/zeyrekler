@@ -18,6 +18,8 @@ function List({ tractors }) {
             Model={tractor.Model}
             Yil={tractor.Yil}
             Ceker={tractor.Ceker}
+            Saat={tractor.Saat}
+            Fiyat={tractor.Fiyat}
             Muayene={tractor.Muayene_Tarihi}
             Numb={`${sayi++}-`}
           >
