@@ -41,6 +41,10 @@
   min-width: 45px;
   text-align: center;
 }
+
+.Fiyat {
+  font-weight: bold;
+}
 .Ceker {
   min-width: 41px;
   text-align: right;

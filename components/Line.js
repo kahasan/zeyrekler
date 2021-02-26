@@ -47,7 +47,7 @@ function Line({ ...props }) {
           <Value className={styles.Yil} Value={props.Yil} />
           <Value className={styles.Ceker} Value={props.Ceker} />
 
-          {size.width > 767 ? <Value className={styles.Fiyat} Value={saat} /> : "" }
+          {size.width > 767 ? <Value className={styles.Saat} Value={saat} /> : "" }
         
           {size.width > 700 ? <Value className={styles.Fiyat} Value={`${first}.${second}₺`} /> : "" }
           <img className={styles.Img} src="next.png"></img>
