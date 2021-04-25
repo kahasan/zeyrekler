@@ -41,7 +41,7 @@ function Line({ ...props }) {
   return (
     <Link href="/[id]" as={props.id}>
       <a>
-        <div className={!check ? styles.Red : styles.Line}>
+        <div style={{minWidth: "16%"}} className={!check ? styles.Red : styles.Line}>
           <Value className={styles.Marka} Value={props.Marka} Numb={props.Numb} />
           <Value className={styles.Model} Value={props.Model} />
           <Value className={styles.Yil} Value={props.Yil} />

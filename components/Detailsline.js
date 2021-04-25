@@ -6,7 +6,7 @@ import styles from './Detailsline.module.css';
 
 function Detailsline({ className, ...props }) {
   return (
-    <div className={styles.Detailsline}>
+    <div  style={{minWidth: "inherit"}} className={styles.Detailsline}>
       <div>{props.Text}</div>
       {props.Value ? (
         <Value className={className} Value={props.Value} />
