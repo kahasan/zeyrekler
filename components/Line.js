@@ -14,7 +14,8 @@ function Line({ ...props }) {
   let currentMonth = d.getMonth() + 1;
   let muayeneYear = parseInt(props.Muayene.slice(6,10));
   let muayeneMonth = parseInt(props.Muayene.slice(3,5));
-  var check = false;
+  let check = false;
+  let owner = false;
   const fiyat = props.Fiyat;
   const x = fiyat.toString().length;
   const y = x - 3;
@@ -22,6 +23,8 @@ function Line({ ...props }) {
   const first = fiyat.toString().slice(0,y);
 
   const saatValue = props.Saat;
+  
+
   let saat = "";
   if (saatValue > 1){
     saat = saatValue
@@ -38,19 +41,26 @@ function Line({ ...props }) {
       check = true;
     }
   }
+
+  if (props.Ruhsat == "İbrahim ZEYREK" || props.Ruhsat == "ZEYREKLER") {
+    owner = true;
+  }
+ 
   return (
     <Link href="/[id]" as={props.id}>
       <a>
-        <div style={{minWidth: "16%"}} className={!check ? styles.Red : styles.Line}>
-          <Value className={styles.Marka} Value={props.Marka} Numb={props.Numb} />
-          <Value className={styles.Model} Value={props.Model} />
-          <Value className={styles.Yil} Value={props.Yil} />
-          <Value className={styles.Ceker} Value={props.Ceker} />
+        <div className={!owner ? styles.Blue : styles.None}>
+          <div style={{minWidth: "16%"}}  className={!check ? styles.Red : styles.Line} >
+            <Value className={styles.Marka} Value={props.Marka} Numb={props.Numb} />
+            <Value className={styles.Model} Value={props.Model} />
+            <Value className={styles.Yil} Value={props.Yil} />
+            <Value className={styles.Ceker} Value={props.Ceker} />
 
-          {size.width > 767 ? <Value className={styles.Saat} Value={saat} /> : "" }
+            {size.width > 767 ? <Value className={styles.Saat} Value={saat} /> : "" }
         
-          {size.width > 700 ? <Value className={styles.Fiyat} Value={`${first}.${second}₺`} /> : "" }
-          <img className={styles.Img} src="next.png"></img>
+            {size.width > 700 ? <Value className={styles.Fiyat} Value={`${first}.${second}₺`} /> : "" }
+            <img className={styles.Img} src="next.png"></img>
+          </div>
         </div>
       </a>
     </Link>

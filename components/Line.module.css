@@ -19,6 +19,14 @@
   color: red !important;
 }
 
+.Blue {
+  color: rgb(0, 255, 139) !important;
+}
+
+.None {
+  color: white !important;
+}
+
 .Marka {
   @media (--m) {
     min-width: 145px;
